@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <img src="assets/iiitk-logo.png" alt="IIITK Logo" class="logo">
+        <div class="profile-section">
+            <span id="userRole">Role: <span id="roleLabel">Student</span></span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <section id="student-section" class="dashboard-section hidden">
+            <h2>Student Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">History</div>
+                <div class="dashboard-card">Track Status</div>
+                <div class="dashboard-card">Apply for New Leave</div>
+            </div>
+        </section>
+
+        <section id="parent-section" class="dashboard-section hidden">
+            <h2>Parent Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">See Active Requests</div>
+                <div class="dashboard-card">Approval</div>
+            </div>
+        </section>
+
+        <section id="faculty-section" class="dashboard-section hidden">
+            <h2>Faculty/Warden/HOD Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">List of All Submitted Leaves</div>
+            </div>
+        </section>
+
+        <section id="academics-section" class="dashboard-section hidden">
+            <h2>Academics Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">All Approved Leaves</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
