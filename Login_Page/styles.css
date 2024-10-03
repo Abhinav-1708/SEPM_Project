@@ -26,13 +26,20 @@ h1 {
     color: #333;
 }
 
-.button-group {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.login-option {
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -43,6 +50,6 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.login-option:hover {
+button:hover {
     background-color: #0056b3;
 }

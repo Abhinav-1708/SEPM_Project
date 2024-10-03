@@ -1,3 +1,3 @@
-function navigateTo(role) {
-    alert("You selected: " + role);
+function navigateTo(page) {
+    window.location.href = page;
 }
