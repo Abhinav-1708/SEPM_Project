@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fafafa;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="date"], input[type="time"], input[type="number"] {
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.e-signature-section, .camera-section {
+    margin-top: 20px;
+}
+
+#canvas {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+}
+
+.camera-section video {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.camera-section button {
+    display: block;
+    margin: 0 auto;
+}
+
+.undertaking {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.undertaking input {
+    margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Leave Application Form</h1>
+        <form id="leaveForm">
+            <label for="studentName">Name of Student</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
+
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your roll number" required>
+
+            <label for="contact">Contact of Student</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+            <label for="parentsContact">Parents' Contact</label>
+            <input type="tel" id="parentsContact" name="parentsContact" placeholder="Enter parents' contact number" required>
+
+            <label for="parentsEmail">Parents' Email</label>
+            <input type="email" id="parentsEmail" name="parentsEmail" placeholder="Enter parents' email" required>
+
+            <label for="purpose">Purpose of Visit</label>
+            <textarea id="purpose" name="purpose" placeholder="State the purpose of your visit" required></textarea>
+
+            <label for="address">Address during the Leave Period</label>
+            <textarea id="address" name="address" placeholder="Enter address during the leave period" required></textarea>
+
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <label for="workingDays">Number of Working Days during Leave Period</label>
+            <input type="number" id="workingDays" name="workingDays" min="0" required>
+
+            <label for="timeIn">Time In</label>
+            <input type="time" id="timeIn" name="timeIn" required>
+
+            <label for="timeOut">Time Out</label>
+            <input type="time" id="timeOut" name="timeOut" required>
+
+            <div class="e-signature-section">
+                <label for="signature">E-Signature</label>
+                <textarea id="signature" name="signature" placeholder="Draw your signature" required></textarea>
+            </div>
+
+            <div class="camera-section">
+                <label for="camera">Take a Picture</label>
+                <div id="camera">
+                    <video id="video" autoplay></video>
+                    <button type="button" id="capture" onclick="capturePhoto()">Capture</button>
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+
+            <label for="fullName">Full Name (for verification)</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Write your full name" required>
+
+            <div class="undertaking">
+                <input type="checkbox" id="undertaking" name="undertaking" required>
+                <label for="undertaking">I understand that the institute won't be responsible if anything happens to me after leaving campus.</label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
