@@ -9,64 +9,111 @@
 <body>
     <div class="form-container">
         <h1>Leave Application Form</h1>
+        <h2>Leave Form</h2>
         <form id="leaveForm">
-            <label for="studentName">Name of Student</label>
-            <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
+            <!-- Student Information -->
+            <fieldset>
+                <legend>Student Information</legend>
 
-            <label for="rollNumber">Roll Number</label>
-            <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your roll number" required>
-
-            <label for="contact">Contact of Student</label>
-            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
-
-            <label for="parentsContact">Parents' Contact</label>
-            <input type="tel" id="parentsContact" name="parentsContact" placeholder="Enter parents' contact number" required>
-
-            <label for="parentsEmail">Parents' Email</label>
-            <input type="email" id="parentsEmail" name="parentsEmail" placeholder="Enter parents' email" required>
-
-            <label for="purpose">Purpose of Visit</label>
-            <textarea id="purpose" name="purpose" placeholder="State the purpose of your visit" required></textarea>
-
-            <label for="address">Address during the Leave Period</label>
-            <textarea id="address" name="address" placeholder="Enter address during the leave period" required></textarea>
-
-            <label for="startDate">Start Date</label>
-            <input type="date" id="startDate" name="startDate" required>
-
-            <label for="endDate">End Date</label>
-            <input type="date" id="endDate" name="endDate" required>
-
-            <label for="workingDays">Number of Working Days during Leave Period</label>
-            <input type="number" id="workingDays" name="workingDays" min="0" required>
-
-            <label for="timeIn">Time In</label>
-            <input type="time" id="timeIn" name="timeIn" required>
-
-            <label for="timeOut">Time Out</label>
-            <input type="time" id="timeOut" name="timeOut" required>
-
-            <div class="e-signature-section">
-                <label for="signature">E-Signature</label>
-                <textarea id="signature" name="signature" placeholder="Draw your signature" required></textarea>
-            </div>
-
-            <div class="camera-section">
-                <label for="camera">Take a Picture</label>
-                <div id="camera">
-                    <video id="video" autoplay></video>
-                    <button type="button" id="capture" onclick="capturePhoto()">Capture</button>
-                    <canvas id="canvas"></canvas>
+                <div class="form-group">
+                    <label for="studentName">Name of Student</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
                 </div>
-            </div>
 
-            <label for="fullName">Full Name (for verification)</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Write your full name" required>
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number</label>
+                    <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your roll number" required>
+                </div>
 
-            <div class="undertaking">
-                <input type="checkbox" id="undertaking" name="undertaking" required>
-                <label for="undertaking">I understand that the institute won't be responsible if anything happens to me after leaving campus.</label>
-            </div>
+                <div class="form-group">
+                    <label for="contact">Contact of Student</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="parentsContact">Parents' Contact</label>
+                    <input type="tel" id="parentsContact" name="parentsContact" placeholder="Enter parents' contact number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="parentsEmail">Parents' Email</label>
+                    <input type="email" id="parentsEmail" name="parentsEmail" placeholder="Enter parents' email" required>
+                </div>
+            </fieldset>
+
+            <!-- Leave Details -->
+            <fieldset>
+                <legend>Leave Details</legend>
+
+                <div class="form-group">
+                    <label for="purpose">Purpose of Visit</label>
+                    <textarea id="purpose" name="purpose" placeholder="State the purpose of your visit" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address during the Leave Period</label>
+                    <textarea id="address" name="address" placeholder="Enter address during the leave period" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="workingDays">Number of Working Days during Leave Period</label>
+                    <input type="number" id="workingDays" name="workingDays" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeIn">Time In</label>
+                    <input type="time" id="timeIn" name="timeIn" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeOut">Time Out</label>
+                    <input type="time" id="timeOut" name="timeOut" required>
+                </div>
+            </fieldset>
+
+            <!-- Signature & Verification -->
+            <fieldset>
+                <legend>Verification</legend>
+
+                <div class="form-group">
+                    <label for="signature">E-Signature</label>
+                    <textarea id="signature" name="signature" placeholder="Draw your signature" required></textarea>
+                </div>
+
+                <div class="form-group camera-section">
+                    <label for="camera">Take a Picture</label>
+                    <div id="camera">
+                        <video id="video" autoplay></video>
+                        <button type="button" id="capture" onclick="capturePhoto()">Capture</button>
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name (for verification)</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Write your full name" required>
+                </div>
+            </fieldset>
+
+            <!-- Undertaking -->
+            <fieldset>
+                <legend>Undertaking</legend>
+
+                <div class="form-group undertaking">
+                    <input type="checkbox" id="undertaking" name="undertaking" required>
+                    <label for="undertaking">I understand that the institute won't be responsible if anything happens to me after leaving campus.</label>
+                </div>
+            </fieldset>
 
             <button type="submit">Submit Application</button>
         </form>

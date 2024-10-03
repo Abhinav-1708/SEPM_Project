@@ -9,8 +9,9 @@ body {
     background-color: #f4f7fa;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; 
     height: 100vh;
+    overflow-y: auto;  
     padding: 20px;
 }
 
@@ -19,31 +20,59 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
+    overflow-y: auto; 
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
     color: #333;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
+h1 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 18px;
     font-weight: bold;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
     color: #555;
 }
 
 input, textarea {
-    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 10px;
     font-size: 16px;
     color: #555;
     background-color: #fafafa;
@@ -51,7 +80,7 @@ input, textarea {
 
 textarea {
     resize: none;
-    height: 80px;
+    height: 60px;
 }
 
 input[type="date"], input[type="time"], input[type="number"] {
@@ -59,7 +88,6 @@ input[type="date"], input[type="time"], input[type="number"] {
 }
 
 button {
-    width: 100%;
     padding: 12px;
     background-color: #007bff;
     color: white;
@@ -74,32 +102,26 @@ button:hover {
     background-color: #0056b3;
 }
 
-.e-signature-section, .camera-section {
-    margin-top: 20px;
+.camera-section {
+    margin-top: 10px;
 }
 
 #canvas {
     display: none;
     margin-top: 10px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     border: 1px solid #ddd;
 }
 
 .camera-section video {
     width: 100%;
-    height: 200px;
+    height: 150px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
 }
 
-.camera-section button {
-    display: block;
-    margin: 0 auto;
-}
-
 .undertaking {
-    margin-top: 20px;
     display: flex;
     align-items: center;
 }
